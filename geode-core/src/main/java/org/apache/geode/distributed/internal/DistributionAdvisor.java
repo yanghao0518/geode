@@ -1614,7 +1614,7 @@ public class DistributionAdvisor {
      * @since GemFire 5.1
      */
     synchronized long startOperation() {
-      logNewOperation();
+      // logNewOperation();
       currentVersionOpCount++;
       return membershipVersion;
     }
