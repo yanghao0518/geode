@@ -124,6 +124,7 @@ public class FileSystem {
         // TODO consider mutable ChunkKey
         if (null == fileAndChunkRegion.remove(key)) {
           // no more chunks
+          logger.info("FS:removed:" + key);
           break;
         }
         key.chunkId++;

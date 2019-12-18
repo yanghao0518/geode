@@ -2761,6 +2761,7 @@ public class LocalRegion extends AbstractRegion implements LoaderHelperFactory,
   public void checkEntryNotFound(Object entryKey) {
     checkReadiness();
     // Localized string for partitioned region is generic enough for general use
+    logger.info("FS before:" + entryKey);
     throw new EntryNotFoundException(
         String.format("Entry not found for key %s", entryKey));
   }

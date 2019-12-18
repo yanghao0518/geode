@@ -66,6 +66,11 @@ public class ChunkKey implements DataSerializableFixedID {
   }
 
   @Override
+  public String toString() {
+    return "ChunkKey:" + fileId + ":" + chunkId;
+  }
+
+  @Override
   public boolean equals(Object obj) {
     if (this == obj) {
       return true;
